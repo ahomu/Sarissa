@@ -1,0 +1,18 @@
+<div class="v-popup-dialog">
+  {{#unless doNotClose}}
+  <a class="js-close" href="#">
+    <img class="img" src="img/ico/popup-close.png" alt="">
+  </a>
+  {{/unless}}
+  <p class="message f-6 c-org">{{{message}}}</p>
+
+  <p style="padding-bottom: 10px">
+    {{#if okLabel}}
+    <button class="btn-rect-orange is-solid c-wht f-4 ubs js-ok" style="width: 40%;" data-tap>{{okLabel}}</button>
+    {{/if}}
+
+    {{#if ngLabel}}
+    <button class="btn-rect-orange is-solid c-wht f-4 ubs js-ng" style="width: 40%;" data-tap>{{ngLabel}}</button>
+    {{/if}}
+  </p>
+</div>

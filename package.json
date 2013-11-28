@@ -1,0 +1,24 @@
+{
+  "name": "Sarissa",
+  "description": "Sarissa is a SPA frontend skeleton",
+  "version": "0.1.0",
+  "contributors": [
+    "Ayumu Sato"
+  ],
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "./node_modules/testem/testem.js -l PhantomJS ci",
+    "sinon": "./js/lib/sinon/build"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-handlebars": "~0.5.9",
+    "grunt-contrib-compass": "~0.4.0",
+    "grunt-csso": "0.5.2",
+    "testem": "~0.2.95",
+    "coffee-script": "~1.6.2"
+  }
+}

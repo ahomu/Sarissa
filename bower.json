@@ -1,0 +1,15 @@
+{
+  "name": "Sarissa",
+  "version": "0.0.0",
+  "dependencies": {
+    "phalanx": "~0.0.5",
+    "zepto": "~1.1.2",
+    "handlebars": "~1.3.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.9.0",
+    "expect": "~0.2.0",
+    "sinon": "~1.7.1",
+    "fixtures": "https://raw.github.com/badunk/js-fixtures/master/fixtures.js"
+  }
+}
