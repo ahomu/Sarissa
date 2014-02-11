@@ -77,7 +77,10 @@ window[NS] = Phalanx.Router.extend({
     _.bindAll(this, 'onGetError', 'onPostError', 'onBustCache', 'clearLayoutCache');
 
     this.rootLayout = new App.Layout.Root();
-    Backbone.history.start({pushState: true});
+    Backbone.history.start({
+      pushState: true,
+      root: location.pathname.slice(0, location.pathname.lastIndexOf('/'))
+    });
 
     Util.mediator.on('sync:error:get',  this.onGetError);
     Util.mediator.on('sync:error:post', this.onPostError);

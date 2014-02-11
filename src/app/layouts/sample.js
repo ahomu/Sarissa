@@ -16,6 +16,15 @@ Layout.Sample = Layout.Base.extend({
   /**
    * @property {Object}
    */
+  events: {
+    'click .js-redraw': function() {
+      this.assign('partial', new View.Sample({}));
+    }
+  },
+
+  /**
+   * @property {Object}
+   */
   regions: {
     partial: '#js-reg-partial'
   },

@@ -61,5 +61,10 @@ View.Sample = View.Base.extend({
 
   onError: function() {
 
+  },
+
+  onClickFoo: function() {
+    alert('foo!');
   }
+
 });
